@@ -1,0 +1,101 @@
+/* Custom CSS for VA Gelateria */
+
+:root {
+    /* Define your color palette as CSS variables for easy, consistent use */
+    --va-primary: #F875AA; /* Pink (Accent) */
+    --va-light-background: #EDFFF0; /* Mint (Main Background) */
+    --va-secondary-background: #FDEDED; /* Light Pink (Card/Secondary BG) */
+    --va-accent-blue: #7FC8F4; /* Light Blue (Secondary Accent) */
+    --va-dark-text: #333333; /* A dark color for readability */
+}
+
+body {
+    background-color: var(--va-light-background);
+    color: var(--va-dark-text);
+    font-family: sans-serif; /* You might want to link a custom font later */
+}
+
+/* Example: Styling the main button/CTA with the primary color */
+.btn-primary {
+    background-color: var(--va-primary);
+    border-color: var(--va-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--va-accent-blue);
+    border-color: var(--va-accent-blue);
+    opacity: 0.9;
+}
+
+/* Example: Styling section headers */
+h2 {
+    color: var(--va-primary);
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    color: var(--va-dark-text); /* Default link color */
+    font-weight: 500;
+}
+
+/* Styling for active/hovered links */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--va-primary) !important; /* Use the brand pink for active/hover */
+    border-bottom: 2px solid var(--va-primary);
+}
+
+.app-logo {
+    /* Dimensiunea de bază pentru mobil (implicit, mobile-first) */
+    height: 45px; /* Începe mic pe telefoane */
+    width: auto;
+}
+
+/* Dimensiune mai mare pe tablete și desktop (ecrane medii și mari) */
+@media (min-width: 768px) {
+    .app-logo {
+        height: 65px; /* Mărim puțin pe desktop */
+    }
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Optional: Sets the height of carousel images to ensure consistency */
+.carousel-inner img {
+    height: 80vh; /* Viewport Height: adjust this as needed */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px; /* Setează o înălțime fixă pentru toate imaginile de sortimente */
+    object-fit: cover; /* Asigură că imaginea acoperă spațiul fără a fi întinsă */
+}
+
+@media (max-width: 399px) {
+    /* Rulează 1 coloană (100% lățime) pentru telefoanele foarte mici */
+    .row-cols-2 > * {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+.gallery-img {
+    width: 100%;
+    height: 250px; /* Setează o înălțime fixă pentru consistență vizuală */
+    object-fit: cover; /* Foarte important: asigură că imaginea umple spațiul fără a fi distorsionată */
+    transition: transform 0.3s ease; /* Adaugă o tranziție pentru efectul de hover */
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.05); /* Zoom subtil la hover pentru interactivitate */
+}
+
+/* Stiluri pentru iconițele Social Media din Footer */
+.social-icons a:hover i {
+    color: var(--va-primary); /* Se menține Primary, dar puteți alege altă culoare */
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}

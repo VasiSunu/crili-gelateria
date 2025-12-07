@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Crili Gelateria | From Rome to Sibiu</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: var(--va-secondary-background);">
+        <div class="container-fluid">
+
+            <a class="navbar-brand fw-bold" href="#" style="color: var(--va-primary);">
+                <img src="photos/logo.png" alt="Crili Gelateria Logo" class="app-logo">
+                Crili Gelateria
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                    style="border-color: var(--va-primary);">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sortiments">Sortiments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-secret">Our Secret</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section id="hero" class="py-5 text-center text-white d-flex align-items-center justify-content-center" style="
+    background: url('photos/Rome1.jpg') no-repeat center center/cover;
+    height: 90vh;
+">
+    <div class="container hero-content p-4 rounded-3" style="background-color: rgba(0, 0, 0, 0.4);">
+        <h1 class="display-1 fw-bold mb-3">Crili Gelateria</h1>
+        <p class="lead mb-4">
+            From Rome to Sibiu: Discover the authentic taste of Italy.
+        </p>
+
+        <a href="#sortiments" class="btn btn-lg btn-primary fw-bold">
+            Explore Our Flavors
+        </a>
+    </div>
+</section>
+
+<section id="carousel-slider" class="p-0">
+    <div id="gelatoCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#gelatoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#gelatoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#gelatoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="photos/Rome2.jpg" class="d-block w-100" alt="a Roman landmark">
+                <div class="carousel-caption d-block d-md-block text-shadow">
+                    <h3 class="fw-bold text-light">From the Heart of Rome...</h3>
+                    <p class="h5">Authentic recipes brought to life in Sibiu.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="photos/Inghetate.jpg" class="d-block w-100" alt="Close-up of colorful gelato scoops">
+                <div class="carousel-caption d-block d-md-block text-shadow">
+                    <h3 class="fw-bold text-light">Fresh Fruit, Low Sugar. Pure Delight.</h3>
+                    <p class="h5">Experience the natural difference in every scoop.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="photos/Sibiu.jpg" class="d-block w-100" alt="Sibiu landscape">
+                <div class="carousel-caption d-block d-md-block text-shadow">
+                    <h3 class="fw-bold text-light">Visit Us in the Heart of Sibiu</h3>
+                    <p class="h5">Your daily dose of Italian sweetness awaits.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#gelatoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#gelatoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<section id="sortiments" class="py-5" style="background-color: var(--va-secondary-background);">
+    <div class="container">
+        <h2 class="text-center mb-5" style="color: var(--va-primary);">Discover Our Authentic Flavors</h2>
+
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-3 g-4">
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="photos/iceCream/biscof.jpg" class="card-img-top" alt="Biscoff Cookie Butter Gelato">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--va-accent-blue);">Biscoff Crumble</h5>
+                        <p class="card-text">Creamy vanilla base infused with rich cookie butter and layered with crunchy Biscoff biscuit pieces. A favorite for cookie lovers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="photos/iceCream/mango.jpg" class="card-img-top" alt="Fresh Mango Sorbet">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--va-accent-blue);">Tropical Mango</h5>
+                        <p class="card-text">Made only with ripe, sweet mangoes and a touch of lemon. An intensely fruity and refreshing sorbet. 100% Vegan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="photos/iceCream/raspberry.jpg" class="card-img-top" alt="Raspberry Gelato">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--va-accent-blue);">Raspberry Dream</h5>
+                        <p class="card-text">Intense and slightly tart flavor, made with pure, locally sourced raspberries. A refreshing choice, naturally low in sugar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="photos/iceCream/melon.jpg" class="card-img-top" alt="Cantaloupe Melon Sorbet">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--va-accent-blue);">Sweet Cantaloupe</h5>
+                        <p class="card-text">The essence of summer in a scoop. Light, creamy gelato featuring the delicate, aromatic flavor of fresh yellow melon.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="photos/iceCream/vanilla.jpg" class="card-img-top" alt="Madagascar Vanilla Gelato">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--va-accent-blue);">Bourbon Vanilla</h5>
+                        <p class="card-text">The Italian classic, elevated. Made with fresh milk and high-quality Bourbon vanilla beans for a rich, aromatic flavor.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="photos/iceCream/oreo.jpg" class="card-img-top" alt="Oreo Cookie Gelato">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--va-accent-blue);">Cookies & Cream (Oreo)</h5>
+                        <p class="card-text">Rich vanilla cream base loaded with generous chunks of chocolate sandwich cookies. A deliciously crunchy experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="photos/iceCream/pistachio.jpg" class="card-img-top" alt="Pistachio Gelato">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--va-accent-blue);">Pistachio Royale</h5>
+                        <p class="card-text">Our signature flavor: made with slow-roasted Bronte pistachios from Sicily. Rich, authentic, transports you directly to Italy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="photos/iceCream/amarena.jpg" class="card-img-top" alt="Amarena Cherry Gelato">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--va-accent-blue);">Amarena Swirl</h5>
+                        <p class="card-text">Creamy milk base speckled with decadent, slightly tart Amarena cherries from Italy. A timeless and elegant flavor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="photos/iceCream/forest-fruit.jpg" class="card-img-top" alt="Forest Fruits Gelato">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--va-accent-blue);">Wild Berry Medley</h5>
+                        <p class="card-text">A vibrant mix of blueberries, blackberries, and strawberries. Intense, natural flavor that captures the taste of the forest.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="#gallery" class="btn btn-lg text-white" style="background-color: var(--va-primary);">View our gallery</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="our-secret" class="py-5">
+    <div class="container">
+
+        <h2 class="text-center mb-5" style="color: var(--va-primary);">The Secret of Authentic Italian Taste</h2>
+
+        <div class="row align-items-center mb-5 p-4 rounded-3" style="background-color: var(--va-secondary-background);">
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <i class="fa-solid fa-crown fa-5x" style="color: var(--va-primary);"></i>
+            </div>
+            <div class="col-md-8">
+                <h3 class="fw-bold" style="color: var(--va-accent-blue);">Original from Rome: The Secret Whipped Cream</h3>
+                <p class="lead">
+                    Our whipped cream is not just any cream. It is prepared daily following a family recipe brought directly from Rome. Its fine texture and balanced taste are the perfect complement to every gelato sortiment. We guarantee an authentic experience!
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center flex-md-row-reverse p-4 rounded-3" style="background-color: var(--va-accent-blue); color: #FFF;">
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <i class="fa-solid fa-leaf fa-5x" style="color: #FFF;"></i>
+            </div>
+            <div class="col-md-8">
+                <h3 class="fw-bold" style="color: var(--va-primary);">100% Purity: Natural Ingredients and Low Sugar</h3>
+                <p class="lead">
+                    We are committed to using only 100% natural ingredients, with no artificial flavors or preservatives. Our gelato is made with real fruits and has a low sugar content, allowing the natural flavor of the raw ingredients to shine. Healthy taste, delicious taste!
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="gallery" class="py-5" style="background-color: var(--va-light-background);">
+    <div class="container">
+
+        <h2 class="text-center mb-5" style="color: var(--va-primary);">Sweet Moments at Crili Gelateria</h2>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="gallery-item overflow-hidden rounded shadow-sm">
+                    <img src="photos/iceCream/i6.jpg" class="img-fluid gallery-img" >
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="gallery-item overflow-hidden rounded shadow-sm">
+                    <img src="photos/people/p5.jpg" class="img-fluid gallery-img" >
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="gallery-item overflow-hidden rounded shadow-sm">
+                    <img src="photos/iceCream/i5.jpg" class="img-fluid gallery-img" >
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="gallery-item overflow-hidden rounded shadow-sm">
+                    <img src="photos/people/p2.jpg" class="img-fluid gallery-img" >
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="gallery-item overflow-hidden rounded shadow-sm">
+                    <img src="photos/iceCream/i7.jpg" class="img-fluid gallery-img" >
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="gallery-item overflow-hidden rounded shadow-sm">
+                    <img src="photos/iceCream/i4.jpg" class="img-fluid gallery-img" >
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="gallery-item overflow-hidden rounded shadow-sm">
+                    <img src="photos/iceCream/i3.jpg" class="img-fluid gallery-img" >
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="gallery-item overflow-hidden rounded shadow-sm">
+                    <img src="photos/people/p3.jpg" class="img-fluid gallery-img" >
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="gallery-item overflow-hidden rounded shadow-sm">
+                    <img src="photos/iceCream/i2.jpg" class="img-fluid gallery-img" >
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="gallery-item overflow-hidden rounded shadow-sm">
+                    <img src="photos/people/p4.jpg" class="img-fluid gallery-img" >
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="gallery-item overflow-hidden rounded shadow-sm">
+                    <img src="photos/iceCream/i1.jpg" class="img-fluid gallery-img" >
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="gallery-item overflow-hidden rounded shadow-sm">
+                    <img src="photos/people/p1.jpg" class="img-fluid gallery-img" >
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer id="contact" class="py-5" style="background-color: var(--va-accent-blue); color: #FFF;">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold" style="color: var(--va-primary);">Crili Gelateria</h5>
+                <p>
+                    "From Rome to Sibiu" - authenticity, passion and the best ingredients.
+                </p>
+                <p class="mt-4">&copy; <span id="current-year">2025</span> Crili Gelateria. All rights reserved.</p>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold" style="color: var(--va-primary);">Contact</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fa-solid fa-location-dot me-2"></i> Sibiu, Str. Școala de Înot, Nr. 67</li>
+                    <li><i class="fa-solid fa-phone me-2"></i> +40 747 494 342</li>
+                    <li><i class="fa-solid fa-envelope me-2"></i> contact@criligelateria.ro</li>
+                    <li><i class="fa-regular fa-clock me-2"></i> Mon-Sun: 10:00 AM - 8:00 PM</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-3 text-md-start">
+                <h5 class="fw-bold" style="color: var(--va-primary);">Follow Us</h5>
+                <div class="social-icons fs-3">
+                    <a href="https://www.instagram.com/vasi_cutu?igsh=MTFyeW01Z2FtMTVpMQ==" class="me-3" aria-label="Instagram"><i class="fa-brands fa-instagram" style="color: var(--va-primary);"></i></a>
+                    <a href="http://www.facebook.com" class="me-3" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="color: var(--va-primary);"></i></a>
+                    <a href="http://www.tiktok.com" aria-label="TikTok"><i class="fa-brands fa-tiktok" style="color: var(--va-primary);"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
