@@ -1,0 +1,6 @@
+# Fisiere de debugging inutile
+*.map
+
+# Fisierele Bootstrap (daca le mai ai in director, le ignora)
+/bootstrap/
+/node_modules/ 
