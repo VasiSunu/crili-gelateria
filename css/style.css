@@ -45,6 +45,17 @@ h2 {
     border-bottom: 2px solid var(--va-primary);
 }
 
+#hero {
+    height: 90vh !important; /* Păstrează 90vh pentru desktop */
+}
+
+/* Nou: Setează o înălțime mai mică pentru mobil (sub 768px) */
+@media (max-width: 450px) {
+    #hero {
+        height: 60vh !important; /* Scade la 60% din înălțime pe mobil */
+    }
+}
+
 .app-logo {
     /* Dimensiunea de bază pentru mobil (implicit, mobile-first) */
     height: 45px; /* Începe mic pe telefoane */
@@ -52,7 +63,7 @@ h2 {
 }
 
 /* Dimensiune mai mare pe tablete și desktop (ecrane medii și mari) */
-@media (min-width: 768px) {
+@media (min-width: 450px) {
     .app-logo {
         height: 65px; /* Mărim puțin pe desktop */
     }
